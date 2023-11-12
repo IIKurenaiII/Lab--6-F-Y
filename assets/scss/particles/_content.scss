@@ -1,0 +1,102 @@
+.contentbox{
+    background: $color-gradient;
+}
+
+.content{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (min-width:375px) and (max-width:767.9999px) {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    
+
+    &__photo{
+        max-width: 500px;
+        margin-top: 46px;
+        @media (min-width:375px) and (max-width:767.9999px) {
+            width: 366px;
+            height: 315.84px;
+        }
+    }
+
+    &__title{
+        max-width: 604px;
+        margin-top: 70px;
+        @media (min-width:375px) and (max-width:767.9999px) {
+            display: flex;
+            width: 366px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 48px;
+        }
+    }
+
+    &__text1{
+        font-family: $font;
+        font-size: $font-md;
+        font-weight: 400;
+        margin-bottom: 18px;
+        color:$color-white;
+        @media (min-width:375px) and (max-width:767.9999px) {
+            text-align: center;
+            text-transform: uppercase;
+            margin-top: 44px;
+        }
+    }
+
+    &__text2{
+        font-family: $font;
+        font-size: $font-big;
+        font-weight: 700;
+        width: 541px;
+        margin-bottom: 16px;
+        color:$color-white;
+        @media (min-width:375px) and (max-width:767.9999px) {
+            width: 316px;
+            text-align: center;
+            margin: 0 auto;
+        }
+    }
+
+    &__text3{
+        font-family: $font;
+        font-size: $font-xxl;
+        font-weight: 400;
+        margin-bottom: 56px;
+        color:$color-white;
+        @media (min-width:375px) and (max-width:767.9999px) {
+            text-align: center;
+        }
+    }
+
+    &__button{
+        border: none;
+        width: 134px;
+        height: 56px;
+        border-radius: 9999px;
+        font-family: $font;
+        font-size: $font-md;
+        font-weight: 700;
+        cursor: pointer;
+        @media (min-width:375px) and (max-width:767.9999px) {
+            margin: 0 auto;
+        }
+    }
+}
+
+.gradientwave{
+    width: auto;
+    margin: 0;
+    @media (min-width:375px) and (max-width:424.9999px) {
+        width: 375px;
+    }
+    @media (min-width:425px) and (max-width:767.9999px) {
+        width: 425px;
+    }
+}

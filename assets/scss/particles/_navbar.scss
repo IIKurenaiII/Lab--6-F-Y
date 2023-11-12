@@ -1,0 +1,106 @@
+.navbar{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: $color-gradient;
+    height: 75px;
+    border-bottom: 1px solid $color-white;
+    width: 100%;
+    
+    &__home{
+        font-family: $font;
+        font-weight: 700;
+        font-size: $font-xxxxl;
+        color: $color-white;
+        text-transform: uppercase;
+    }
+
+    &__link{
+        font-family: $font;
+        font-weight: 400;
+        font-size: $font-md;
+        color: $color-black;
+        padding-right: 44px;
+        &:hover{
+            font-weight: 700;
+        }
+
+        @media (max-width: 767.99999999999px) {
+            padding-right: 0px;
+            padding-bottom: 30px;
+        }
+    }
+
+    &__button{
+        border: none;
+        width: 110px;
+        height: 56px;
+        box-shadow:  0px 1px 2px 0px rgba(0, 0, 0, 0.06), 0px 1px 3px 0px rgba(0, 0, 0, 0.10);
+        border-radius: 9999px;
+        opacity: 75%;
+        font-family: $font;
+        font-weight: 700;
+        font-size: $font-md;
+        color: $color-black;
+        cursor: pointer;
+        @media (min-width:375px) and (max-width:767.9999px) {
+            opacity: 100%;
+        }
+    }
+
+    &__menu{
+        display: flex;
+        align-items: center;
+        transition: all 0.5s ease-in-out;
+        @media (max-width: 767.99999999999px) {
+            align-items: center;
+            flex-direction: column;
+            position: fixed;
+            width: auto;
+            height: 0;
+            overflow: hidden;
+            inset: 0;
+            z-index: 1;
+        }
+    }
+
+    &__check{
+        font-family: $font;
+        font-size: $font-xl;
+        font-style: normal;
+        font-weight: 400;
+        background-color: $color-white;
+        display: block;
+        opacity: 0;
+        width: 100% !important;
+        height: 0 !important;
+        position: absolute;
+        z-index: -1;
+        @media (min-width: 768px) {
+            display: none;
+        }
+        @media (max-width: 767.99999999999px) {
+            &:checked ~ .navbar__menu{
+                margin-top: 75px;
+                height: 290px;
+                width: 100%;
+                background:rgba($color: #ffffff, $alpha: 0.5);
+                padding-top: 36px;
+            }
+        }
+    }
+} 
+
+
+.burgerBTN{
+    position: relative;
+    z-index: 5;
+    display: block;
+    font-size: $font-md;
+    transition: all 0.2s ease-in-out;
+    @media (min-width: 768px) {
+        display: none;
+    }
+}
+

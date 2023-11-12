@@ -1,0 +1,37 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+
+
+h1,h2,h3,h4,h5,h6,p,ul,ol{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: $color-black;
+}
+
+
+.conteiner{
+    display: inherit;
+    align-items: inherit;
+    justify-content: inherit;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    @media (min-width:375px) and (max-width:767.9999px) {
+        max-width: 327px;
+    }
+
+    @media (min-width:1540px) and (max-width:1919.9999px) {
+        width: 1540px;
+        width: 100%;
+    }
+}

@@ -1,0 +1,108 @@
+
+
+.foot{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $color-gradient;
+
+    &__pre{
+        flex-direction: column;
+        margin-top: 230px;
+        text-align: center;
+        @media (min-width:375px) and (max-width:767.9999px) {
+            margin-top: 30px;
+        }
+    }
+
+    &__title{
+        font-family: $font;
+        font-size: $font-big;
+        font-weight: 700;
+        color: $color-white;
+        border-bottom: 4px solid $color-white;
+        margin-bottom:27px;
+    }
+
+    &__text{
+        font-family: $font;
+        font-size: $font-xxxl;
+        font-weight: 400;
+        color: $color-white;
+        margin-bottom: 40px;
+    }
+
+    &__button{
+        font-family: $font;
+        font-size: $font-md;
+        font-weight: 700;
+        width: 115px;
+        height: 56px;
+        border: none;
+        border-radius: 999px;
+        cursor: pointer;
+        margin-bottom: 112px;
+    }
+}
+
+.footer{
+    &__textbox{
+        display: flex;
+        flex-direction: column;
+
+        @media (min-width:375px) and (max-width:767.9999px) {
+            flex-direction: row;
+        }
+    }
+
+    &__conteiner{
+        height: 208px;
+        padding-top: 24px;
+        display: grid;
+        grid-template-columns: repeat(5 , 1fr); 
+
+        @media (min-width:375px) and (max-width:767.9999px) {
+            grid-template-columns: repeat(1 , 1fr);
+        }
+    }
+
+    &__home{
+        font-family: $font;
+        font-size: $font-xxxxl;
+        font-weight: 700;
+        color: $color-pink;
+        text-transform: uppercase;
+    }
+
+    &__title{
+        font-family: $font;
+        font-size: $font-md;
+        font-weight: 400;
+        color: $color-grayl;
+        text-transform: uppercase;
+        margin-bottom: 24px;
+        @media (min-width:375px) and (max-width:767.9999px) {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__text{
+        display: flex;
+        cursor: pointer;
+        font-family: $font;
+        font-size: $font-md;
+        font-weight: 400;
+        margin-bottom: 8px;
+        @media (min-width:375px) and (max-width:767.9999px) {
+            margin-right: 8px;
+            margin-bottom: 24px;
+        }
+    }
+}
+
+.gradientwave2{
+    @media (min-width:375px) and (max-width:767.9999px) {
+        width: 0;
+        height: 0;
+    }
+}

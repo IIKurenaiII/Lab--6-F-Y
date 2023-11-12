@@ -1,0 +1,226 @@
+.grid{
+    &__conteiner{
+        width: 1024px;
+        margin: 0 auto;
+        @media (min-width:375px) and (max-width:424.9999px) {
+            width: 342px;
+            margin-left: 0;
+        }
+        @media (min-width:425px) and (max-width:767.9999px) {
+            width: 342px;
+            margin-left: 0;
+        }
+    }
+
+    &__h2{
+        max-width: 256px;
+        margin: 0 auto;
+        text-align: center;
+        font-family: $font;
+        font-size: $font-xxxxl;
+        font-weight: 700;
+        border-bottom: 4px solid $color-yellow;
+
+        @media (min-width:375px) and (max-width:767.9999px) {
+            width: 425px;
+        }
+    }
+
+    &__titlegr{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        @media (min-width:375px) and (max-width:767.9999px) {
+            grid-template-columns: 1fr;;
+        }
+    }
+
+    &__title{
+        font-family: $font;
+        font-size: $font-xxxl;
+        font-weight: 700;
+        margin-top: 20px;
+        margin-left: 24px;
+        margin-bottom: 8px;
+        @media (min-width:375px) and (max-width:767.9999px) {
+            margin-left: 0px;
+        }
+    }
+
+    &__text{
+        font-family: $font;
+        font-size: $font-md;
+        font-weight: 400;
+        margin-left: 24px;
+        margin-bottom: 28px;
+        @media (min-width:375px) and (max-width:767.9999px) {
+            margin-left: 0px;
+        }
+    }
+
+    &__text2{
+        font-family: $font;
+        font-size: $font-md;
+        font-weight: 400;
+        margin-left: 24px;
+        @media (min-width:375px) and (max-width:767.9999px) {
+            margin-left: 0px;
+        }
+    }
+
+    &__link{
+        color: $color-pink;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+
+    &__photo1{
+        margin-top: 20px;
+        @media (min-width:375px) and (max-width:767.9999px) {
+            width: 342px;
+            height: 174px;
+        }
+    }
+
+    &__photo2{
+        margin-top: 20px;
+        @media (min-width:375px) and (max-width:767.9999px) {
+            width: 285px;
+            height: 211px;
+            margin-left: 20px;
+        }
+    }
+}
+
+.line{
+    margin-top: 65px;
+    margin-bottom: 32px;
+}
+
+.grid2{
+
+
+    &__h2{
+        max-width: 256px;
+        margin: 0 auto;
+        text-align: center;
+        font-family: $font;
+        font-size: $font-xxxxl;
+        font-weight: 700;
+        border-bottom: 4px solid $color-yellow;
+        margin-bottom: 16px;
+        @media (min-width:375px) and (max-width:767.9999px) {
+            width: 425px;
+        }
+    }
+
+    &__titlegr{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        margin-bottom: 105px;
+        @media (min-width:375px) and (max-width:767.9999px) {
+            grid-template-columns: 1fr;;
+        }
+    }
+
+    &__box{
+        height: 292px;
+        width: 400px;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+        @media (min-width:375px) and (max-width:767.9999px) {
+            width: 342px;
+            height: 288px;
+        }
+    }
+
+    &__start{
+        font-family: $font;
+        font-size: $font-sm;
+        font-weight: 400;
+        margin-left: 12px;
+        @media (min-width:375px) and (max-width:767.9999px) {
+            margin-left: 24px;
+        }
+    }
+
+    &__title{
+        font-family: $font;
+        font-size: $font-xl;
+        font-weight: 700;
+        margin-left: 12px;
+        @media (min-width:375px) and (max-width:767.9999px) {
+            margin-left: 24px;
+        }
+    }
+
+    &__text{
+        font-family: $font;
+        font-size: $font-md;
+        font-weight: 400;
+        margin-left: 12px;
+        margin-bottom: 28px;
+        @media (min-width:375px) and (max-width:767.9999px) {
+            margin-left: 24px;
+        }
+    }
+
+    &__button{
+        font-family: $font;
+        font-size: $font-md;
+        font-weight: 700;
+        width: 110px;
+        height: 56px;
+        border: none;
+        background: $color-gradient;
+        color: $color-white;
+        border-radius: 9999px;
+        margin-top: 68px;
+        margin-left: 20px;
+        @media (min-width:375px) and (max-width:767.9999px) {
+            float: none;
+            margin-left: 120px;
+        }
+    }
+    &__button2{
+        font-family: $font;
+        font-size: $font-md;
+        font-weight: 700;
+        width: 110px;
+        height: 56px;
+        border: none;
+        background: $color-gradient;
+        color: $color-white;
+        border-radius: 9999px;
+        margin-top: 68px;
+        margin-left: 150px;
+        @media (min-width:375px) and (max-width:767.9999px) {
+            float: none;
+            margin-left: 120px;
+        }
+    }
+
+    &__button3{
+        font-family: $font;
+        font-size: $font-md;
+        font-weight: 700;
+        width: 110px;
+        height: 56px;
+        border: none;
+        background: $color-gradient;
+        color: $color-white;
+        border-radius: 9999px;
+        margin-top: 68px;
+        margin-right: 20px;
+        float: right;
+
+        @media (min-width:375px) and (max-width:767.9999px) {
+            float: none;
+            margin-right: 0px;
+            margin-left: 120px;
+        }
+    }
+}
